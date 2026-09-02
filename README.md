@@ -39,4 +39,8 @@
 
 ```bash
 curl -o init_ubuntu.sh https://raw.githubusercontent.com/2366504649/Ubuntu-Bootstrap/main/init_ubuntu.sh
-、、、
+
+### 2. trigger file
+、、、bash
+chmod +x ~/init_ubuntu.sh
+./init_ubuntu.sh
