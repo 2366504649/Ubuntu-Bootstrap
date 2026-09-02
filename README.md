@@ -8,22 +8,22 @@
 
 ---
 
-## ✨ Features
+## Features
 
-- 🐧 Ubuntu 系统初始化
-- 📦 安装常用系统工具
-- 🐍 安装和配置 Python
-- 🔧 安装和配置 pyenv
-- 🌱 配置 Git 用户信息
-- 🔐 配置 SSH Key
-- 🛡️ 配置 UFW 防火墙
-- 🕐 设置系统时区
-- 🧹 系统基础清理
-- ⚡ 一键完成 Ubuntu 初始化
+- Ubuntu 系统初始化
+- 安装常用系统工具
+- 安装和配置 Python
+- 安装和配置 pyenv
+- 配置 Git 用户信息
+- 配置 SSH Key
+- 配置 UFW 防火墙
+- 设置系统时区
+- 系统基础清理
+- 一键完成 Ubuntu 初始化
 
 ---
 
-## 📋 Requirements
+## Requirements
 
 - Ubuntu 22.04+
 - `sudo` 权限
@@ -41,9 +41,20 @@
 curl -o init_ubuntu.sh https://raw.githubusercontent.com/2366504649/Ubuntu-Bootstrap/main/init_ubuntu.sh
 ```
 
-### 2. trigger file
+### 2. config file
 
 ```bash
 chmod +x ~/init_ubuntu.sh
+```
+
+### 3. trigger file
+```bash
+PYTHON_VERSION=3.14.7 \
+PYENV_VERSION=v2.8.1 \
+GIT_USER_NAME="Your Name" \
+GIT_USER_EMAIL="you@example.com" \
+SSH_KEY_EMAIL="you@example.com" \
+TIMEZONE=Asia/Shanghai \
+ENABLE_UFW=1 \
 ./init_ubuntu.sh
 ```
