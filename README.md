@@ -49,8 +49,6 @@ chmod +x ~/init_ubuntu.sh
 
 ### 3. trigger file
 ```bash
-PYTHON_VERSION=3.14.7 \
-PYENV_VERSION=v2.8.1 \
 GIT_USER_NAME="Your Name" \
 GIT_USER_EMAIL="you@example.com" \
 SSH_KEY_EMAIL="you@example.com" \
